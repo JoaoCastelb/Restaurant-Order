@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!--Header-->
+
+        <header>
+            <h1>Cantinho do Thiozão</h1>
+            <p>comida boa e barata, confia</p>
+        </header>
+
+        <div id="none">
+        <!--Main Menu-->
+
+            <main>
+                <button id="show-menu">See menu</button>
+                <div class="menu" id="menu">
+                    <!-- menu here!! -->
+                </div>
+            </main>
+
+
+            <!--Order Menu-->
+
+            <div class="ordered-section">
+                <h2>Your order</h2>
+                <div class="order-menu" id="order">
+                    <!-- selected food here!! -->
+                </div>
+
+                <div class="total-price" id="total-price">
+                    <!-- total price here!! -->
+                    
+                </div>
+            </div>
+
+
+            <!--Modal-->
+            <div class="modal-inner" id="modal-inner">
+                <h3>Enter card Ditails</h3>
+                <form class="form" id="form">
+                    <input id="user" type="text" placeholder="Enter your Name" required>
+                    <input type="tel" inputmode="numeric" placeholder="Enter Card number" maxlength = "16" required>
+                    <input type="tel" inputmode="numeric" placeholder="Enter CVV" maxlength = "3" required>
+                    <button class="pay-btn" id="pay-btn">Pay</button>
+                    <button id="close-modal">X</button>
+                </form>
+            </div>
+        </div>
+
+        
+    </div>
+    
+    <div class="final" id="final"></div>
+
+
+
+
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>

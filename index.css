@@ -1,0 +1,247 @@
+body{
+    margin: auto;
+    width: 700px;
+    color: rgb(31, 31, 31);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    background-color: rgb(234, 161, 15);  
+}
+
+header{
+    background-image: url(images/hamburguer.jpeg);
+    padding: 12px 12px 2px 12px;
+    background-size: 100%;
+    color: rgb(234, 161, 15);
+}
+
+h1{
+    margin: 32px 0px 0px 0px;
+}
+
+p{
+    margin: 0px 0px 26px 0px;
+}
+
+/* menu */
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.none{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#show-menu, .close-btn{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgb(31, 31, 31);
+    color: rgb(234, 161, 15);
+    border-radius: 20px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    cursor: pointer; 
+}
+
+.close-btn{
+    display: flex;
+    justify-content: center;
+    color: rgb(234, 161, 15);}
+
+button:hover{
+    transform: scale(1.05)
+}
+
+.menu{
+    padding: 12px 12px 2px 12px;
+}
+
+.food-display{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin-bottom: 20px;
+
+    border-bottom: solid  rgb(129, 90, 13);
+    border-width: 1px; 
+}
+
+.food-display p{
+    color: rgb(129, 90, 13);
+}
+
+.test{
+    display: flex;
+    align-items: center;
+}
+
+.content{
+    text-align: left;
+}
+
+.icon{
+    font-size: 100px;
+    margin-top: 15px;
+}
+
+.mais{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    cursor: pointer; 
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 0 10px;
+    border: solid rgb(31, 31, 31);
+    color: rgb(31, 31, 31);;
+    background-color: rgb(234, 161, 15);
+    margin-right: 10px; 
+}
+
+.menos{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    cursor: pointer; 
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 0 13px;
+    border: solid rgb(31, 31, 31);
+    color: rgb(31, 31, 31);;
+    background-color: rgb(234, 161, 15);
+    margin-right: 40px; 
+}
+
+.ordered-section{
+    text-align: center;
+    background-color:  rgb(243, 187, 76);
+    color: rgb(31, 31, 31);
+    border-width: 1px; 
+    padding: 10px;
+}
+
+.food-table{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 200px;
+    font-weight: bold;
+}
+
+/* order section */
+
+.total-price{
+
+    margin: auto;
+    width: 300px;
+    font-weight: bold;
+    margin-top: 10px;
+    border-top: 1px solid black;
+}
+
+.total-price p{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.total-price button{
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 200px;
+    padding: 13px;
+    background-color: rgb(31, 31, 31);
+    color: rgb(243, 187, 76);
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+/* modal section */
+
+.modal-inner{
+    display: none;
+
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 10px;
+    padding: 15px;
+    height: 270px;
+    width: 300px;
+    background-color: rgb(249, 223, 171);
+    box-shadow: 2px 2px 10px;
+
+}
+
+.pay-btn{
+    margin-top: 15px;
+    width: 140px;
+    padding: 10px;
+    background-color: rgb(31, 31, 31);
+    color: rgb(243, 187, 76);
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    box-shadow: black 1px 1px 7px;
+}
+
+.modal-inner input{
+    background-color: rgb(255, 246, 227);
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 7px;
+}
+
+#close-modal{
+    position: absolute;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(249, 223, 171);
+    margin: 10px;
+    font-size: 20px;
+    right: 0;
+    top: 0;   
+}
+
+#close-modal:hover{
+    color: rgb(109, 79, 19);
+    cursor: pointer;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.final{
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+    background-color:rgb(234, 161, 15);
+    padding: 20px;
+}
+
+.final p{
+    margin-top: 23px;
+}
